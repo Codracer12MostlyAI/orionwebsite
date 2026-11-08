@@ -5,10 +5,12 @@
   // Guess Apple Silicon vs Intel. Safari doesn't say, so default to Apple Silicon (most Macs since 2021).
   let arch = 'appleSilicon';
   const setArch = (a) => {
+    if (!dl[a]) a = dl.appleSilicon ? 'appleSilicon' : 'intel'; // only one version uploaded
     arch = a;
     const other = a === 'intel' ? 'appleSilicon' : 'intel';
     document.querySelectorAll('[data-download]').forEach((el) => { el.href = dl[arch] || '#'; });
     document.querySelectorAll('[data-download-other]').forEach((el) => {
+      el.style.display = dl[other] ? '' : 'none';
       el.href = dl[other] || '#';
       el.textContent = other === 'intel' ? 'Have an Intel Mac? Get that version' : 'Have an Apple Silicon Mac (M1–M4)? Get that version';
     });

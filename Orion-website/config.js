@@ -8,10 +8,10 @@ window.ORION = {
   // Render/GitHub repos can't hold files over 100 MB). A Google Drive "anyone with the link"
   // download link works too.
   downloads: {
-    appleSilicon: 'https://github.com/YOUR-GITHUB-NAME/orion/releases/latest/download/Orion-mac-AppleSilicon.zip',
-    intel: 'https://github.com/YOUR-GITHUB-NAME/orion/releases/latest/download/Orion-mac-Intel.zip',
+    appleSilicon: 'https://github.com/Codracer12MostlyAI/orionwebsite/releases/latest/download/Orion-mac-AppleSilicon.zip',
+    intel: ''  // no Intel build yet: the Intel link stays hidden,
   },
 
   // Link to the source code (for the "Run from source" section). Leave empty to hide the button.
-  sourceUrl: 'https://github.com/YOUR-GITHUB-NAME/orion',
+  sourceUrl: '',
 };
