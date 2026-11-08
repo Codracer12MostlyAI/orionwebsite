@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Orion: the browser that feels like yours</title>
+  <meta name="description" content="Orion is a fast, private browser for Mac by Paper Tech, with sidebar apps, built-in Orion AI, a tracker-blocking Shield, themes, background music and Chrome extensions." />
+  <meta property="og:title" content="Orion: the browser that feels like yours" />
+  <meta property="og:description" content="Sidebar apps, Orion AI, a Shield that finds trackers on its own, themes and Chrome extensions. Free for Mac." />
+  <meta property="og:image" content="assets/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="config.js"></script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#88a3f7" /><stop offset="1" stop-color="#5f71c2" /></linearGradient>
+    </defs>
+  </svg>
+
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Orion home">
+      <svg viewBox="0 0 100 100" class="ring"><circle cx="50" cy="50" r="38" fill="none" stroke="url(#ring)" stroke-width="16" /></svg>
+      <span>Orion</span>
+    </a>
+    <nav class="links">
+      <a href="#features">Features</a>
+      <a href="#install">Install</a>
+      <a href="#source">Run from source</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn small" href="#download" data-download>Download</a>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Free for Mac · by Paper Tech</p>
+        <h1>The browser that<br /><span class="grad">feels like yours.</span></h1>
+        <p class="lead">Discord, YouTube and Spotify in the sidebar. A private AI that runs on your Mac. A Shield that finds trackers on its own. Themes, music and Chrome extensions, all in one calm, fast window.</p>
+        <div class="cta" id="download">
+          <a class="btn big" href="#" data-download>
+            <svg viewBox="0 0 24 24" class="apple"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.73-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.87-.76-1.47.02-2.83.86-3.59 2.18-1.53 2.66-.39 6.6 1.1 8.76.73 1.06 1.59 2.24 2.72 2.2 1.1-.05 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.84-1.23 1.18-2.42 1.2-2.48-.03-.01-2.3-.88-2.28-3.51zM14.2 6.1c.6-.74 1.01-1.75.9-2.77-.87.04-1.93.58-2.55 1.31-.56.64-1.05 1.68-.92 2.67.97.08 1.97-.49 2.57-1.21z" /></svg>
+            <span><b>Download for Mac</b><small data-arch-label>Apple Silicon (M1–M4)</small></span>
+          </a>
+          <a class="alt-link" href="#" data-download-other>Have an Intel Mac? Get that version</a>
+        </div>
+        <p class="fine">Version <span data-version>1.0.0</span> · macOS 12 or newer · About 120 MB</p>
+      </div>
+      <div class="hero-shot">
+        <img src="assets/webpage.webp" alt="Orion showing a travel article, with the sidebar of apps on the left" width="1800" height="1153" />
+        <img class="float f1" src="assets/shield.webp" alt="" aria-hidden="true" />
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+      <h2>Everything you open a browser for.<br /><span class="muted">Nothing you don’t.</span></h2>
+
+      <article class="feature">
+        <div class="f-copy">
+          <span class="tag">Sidebar apps</span>
+          <h3>Your apps, one click away</h3>
+          <p>Discord, YouTube, Spotify and any site you pin open in a floating window beside the page, like Opera GX. They stay signed in and keep playing when you hide them. Pin the window to dock it next to the page.</p>
+        </div>
+        <img src="assets/sidebar-chat.webp" alt="A chat app open in a floating sidebar window next to a web page" />
+      </article>
+
+      <article class="feature flip">
+        <div class="f-copy">
+          <span class="tag">Orion AI</span>
+          <h3>A private AI that runs on your Mac</h3>
+          <p>Ask, write and research with Orion AI, right in the sidebar. The model runs on your own computer, so your chats never leave it. Turn it off anytime in Settings.</p>
+        </div>
+        <img src="assets/ai-sidebar.webp" alt="Orion AI open in the sidebar window" />
+      </article>
+
+      <article class="feature">
+        <div class="f-copy">
+          <span class="tag">Shield</span>
+          <h3>Blocks trackers, even new ones</h3>
+          <p>Orion blocks ads and trackers with the same big lists uBlock uses. It also <b>finds trackers on its own</b>: any company it catches following you across three or more sites gets blocked, even if no list has it yet.</p>
+        </div>
+        <img src="assets/shield.webp" alt="The Shield panel listing blocked trackers, one marked Found by Orion" />
+      </article>
+
+      <article class="feature flip">
+        <div class="f-copy">
+          <span class="tag">Make it yours</span>
+          <h3>Themes, backgrounds and music</h3>
+          <p>Pick Sky, Lavender, Mint, Sunset, Midnight or Gamer, or build your own colors. Add a background photo. Turn on calm background music that Orion generates live, or play your own songs. It pauses automatically when a video starts.</p>
+        </div>
+        <img src="assets/customize-midnight.webp" alt="The Customize panel in the Midnight theme with themes and music tracks" />
+      </article>
+
+      <div class="mini-grid">
+        <div class="mini"><div class="mini-ico">🧩</div><h4>Chrome extensions</h4><p>Click “Add to Chrome” on the Chrome Web Store and it installs into Orion.</p></div>
+        <div class="mini"><div class="mini-ico">⚡</div><h4>Light on memory</h4><p>Tabs you haven’t used in a while unload themselves, and background tabs stop drawing.</p></div>
+        <div class="mini"><div class="mini-ico">🔐</div><h4>Stays signed in</h4><p>Your logins survive restarts, including Google sign-in and Discord.</p></div>
+        <div class="mini"><div class="mini-ico">🎮</div><h4>Gamer theme</h4><p>Dark red, very GX. Looks great at 2 a.m.</p></div>
+      </div>
+    </section>
+
+    <!-- Install -->
+    <section class="install" id="install">
+      <h2>How to download and run Orion</h2>
+      <p class="sub">About two minutes. You only do steps 4 and 5 the very first time.</p>
+
+      <ol class="steps">
+        <li>
+          <div class="num">1</div>
+          <div>
+            <h3>Download the zip</h3>
+            <p>Click <a href="#" data-download>Download for Mac</a>. Pick the Intel version if your Mac is from before 2021 (Apple menu → About This Mac shows “Intel” or “Apple M…”).</p>
+          </div>
+        </li>
+        <li>
+          <div class="num">2</div>
+          <div>
+            <h3>Open the zip</h3>
+            <p>Find <code>Orion-mac-AppleSilicon.zip</code> in your <b>Downloads</b> folder and double-click it. You’ll get <b>Orion</b> with the blue ring icon.</p>
+          </div>
+        </li>
+        <li>
+          <div class="num">3</div>
+          <div>
+            <h3>Move it to Applications</h3>
+            <p>Drag <b>Orion</b> into your <b>Applications</b> folder, so it lives with your other apps and shows up in Launchpad and Spotlight.</p>
+          </div>
+        </li>
+        <li>
+          <div class="num">4</div>
+          <div>
+            <h3>Open it the first time</h3>
+            <p>Double-click Orion. Because it isn’t from the App Store, macOS may say it <i>“can’t be opened because Apple cannot check it.”</i> That’s normal for free apps from the web. Click <b>Done</b>, then:</p>
+            <div class="mac-steps">
+              <div class="mac-card">
+                <div class="mac-bar"><i></i><i></i><i></i><span>Privacy &amp; Security</span></div>
+                <div class="mac-body">
+                  <p class="dim">Security</p>
+                  <p>“Orion” was blocked to protect your Mac.</p>
+                  <span class="mac-btn">Open Anyway</span>
+                </div>
+              </div>
+              <p>Open <b>System Settings → Privacy &amp; Security</b>, scroll down, and click <b>Open Anyway</b> next to Orion. Confirm with your password or Touch ID. That’s it: from now on Orion opens normally.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="num">5</div>
+          <div>
+            <h3>If it says Orion is “damaged”</h3>
+            <p>Some downloads show <i>“Orion is damaged and can’t be opened.”</i> It isn’t really damaged; macOS just doesn’t recognize who made it. Click <b>Cancel</b> (not Move to Trash), open the <b>Terminal</b> app (⌘ Space, type “Terminal”), paste this and press Return:</p>
+            <div class="code"><code id="fix-cmd">xattr -cr /Applications/Orion.app &amp;&amp; codesign --force --deep --sign - /Applications/Orion.app</code><button class="copy" data-copy="#fix-cmd">Copy</button></div>
+            <p class="dim">Then open Orion again. This only needs doing once per download.</p>
+          </div>
+        </li>
+        <li>
+          <div class="num done">✓</div>
+          <div>
+            <h3>Set it up</h3>
+            <p>Orion welcomes you with a quick setup: your name, a theme, your search engine and your sidebar apps. You can also make it your default browser there.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Run from source -->
+    <section class="source" id="source">
+      <div class="source-card">
+        <div>
+          <span class="tag">For tinkerers</span>
+          <h2>Run Orion from source</h2>
+          <p>Orion is built with Electron. If you have the source code, you can run it straight from your computer or build your own app. An app you build yourself opens without any of the warnings above.</p>
+          <a class="btn ghost" href="#" data-source>View the source code</a>
+        </div>
+        <div class="terminal">
+          <div class="term-bar"><i></i><i></i><i></i><span>Terminal</span></div>
+          <div class="term-body">
+            <p class="c"># 1. Install Node.js 20 or newer from nodejs.org</p>
+            <p class="c"># 2. In the Orion folder:</p>
+            <div class="code dark"><code id="src-1">npm install</code><button class="copy" data-copy="#src-1">Copy</button></div>
+            <p class="c"># Run it</p>
+            <div class="code dark"><code id="src-2">npm start</code><button class="copy" data-copy="#src-2">Copy</button></div>
+            <p class="c"># Build Orion.app + a .dmg into the dist folder</p>
+            <div class="code dark"><code id="src-3">npm run dist</code><button class="copy" data-copy="#src-3">Copy</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <h2>Questions</h2>
+      <details><summary>Is Orion free?</summary><p>Yes. No account, no subscription.</p></details>
+      <details><summary>Why does my Mac warn me when I first open it?</summary><p>Apple shows that warning for any app that isn’t from the App Store or signed with a paid Apple developer certificate. Orion isn’t (yet), so macOS asks you to confirm once. Steps 4 and 5 above walk you through it.</p></details>
+      <details><summary>Does it work on Intel Macs?</summary><p>Yes: download the Intel version. Orion needs macOS 12 Monterey or newer.</p></details>
+      <details><summary>Do Chrome extensions work?</summary><p>Most do. Open the puzzle button, click “Get extensions”, and use “Add to Chrome” in the Chrome Web Store. Extensions that rely on very Chrome-specific features (some password managers or screen recorders) may not work.</p></details>
+      <details><summary>Can I sign in with Google?</summary><p>Yes. If Google asks for a passkey, choose “Try another way” and use your password or phone. Mac passkeys need an Apple permission Orion doesn’t have yet.</p></details>
+      <details><summary>Where is my data kept?</summary><p>On your Mac. Bookmarks, history, logins and Orion AI chats stay on your computer. Logins are encrypted with your Mac’s Keychain.</p></details>
+      <details><summary>How much memory does Orion AI use?</summary><p>It depends on the model you pick: roughly 1–3 GB for the small ones, 5–6 GB for the big 8B models. Orion frees that memory a few minutes after you stop using it.</p></details>
+    </section>
+
+    <section class="final">
+      <svg viewBox="0 0 100 100" class="ring big-ring"><circle cx="50" cy="50" r="38" fill="none" stroke="url(#ring)" stroke-width="14" /></svg>
+      <h2>Ready when you are.</h2>
+      <a class="btn big" href="#" data-download><span><b>Download Orion for Mac</b><small data-arch-label>Apple Silicon (M1–M4)</small></span></a>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Paper Tech. Orion is not affiliated with Apple, Google or Discord.</span>
+    <span><a href="#install">Install help</a> · <a href="#faq">FAQ</a></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
